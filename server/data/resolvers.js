@@ -123,6 +123,12 @@ export const Resolvers = {
     messages(group, args, ctx) {
       return groupLogic.messages(group, args, ctx);
     },
+    lastRead(user, args, ctx) {
+      return groupLogic.lastRead(user, args, ctx);
+    },
+    unreadCount(user, args, ctx) {
+      return groupLogic.unreadCount(user, args, ctx);
+    },
   },
   Message: {
     to(message, args, ctx) {
